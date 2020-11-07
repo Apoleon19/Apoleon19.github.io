@@ -1,0 +1,404 @@
+@import './fonts.css';
+
+* {
+  margin: 0;
+  bottom: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+button {
+  outline: none;
+  background: none;
+  border: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrapper {
+}
+
+.container {
+  max-width: 1566px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__container {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  padding: 100px 200px 0 200px;
+  height: 100vh;
+  background: url('../assets/img/header_bg.png') center / cover;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.header__logo {
+  font-family: 'Pristina';
+  font-weight: normal;
+  font-size: 72px;
+}
+
+.header__nav {
+  display: flex;
+  align-items: flex-start;
+  width: 452px;
+}
+
+.header__form {
+  position: relative;
+}
+
+.form__icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 20px;
+  width: 35px;
+  height: 23px;
+}
+
+.form__input {
+  padding: 17px 125px 17px 64px;
+  border-radius: 10px;
+  border: 1.5px solid #c0c0c0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  outline: none;
+}
+
+.form__clear {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: url(../assets/icons/cancel.svg) center center no-repeat;
+  width: 26px;
+  height: 25px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.header__login {
+  margin-left: auto;
+  width: 56px;
+  height: 56px;
+  border-radius: 10px;
+  background: #ff7171;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background: #ff7171 url(../assets/icons/user.png) center center no-repeat;
+  cursor: pointer;
+}
+
+.header__decoration-text {
+  right: 0;
+  top: 20%;
+  position: absolute;
+  z-index: 5;
+  font-family: 'Pristina', sans-serif;
+  font-style: normal;
+  font-size: 400px;
+  color: #ff7171;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  opacity: 0.4;
+}
+
+.results__menu {
+  margin: 80px 200px 0;
+}
+
+.results__title {
+  font-size: 48px;
+  line-height: 59px;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.results__filter {
+  width: 348px;
+  display: flex;
+  align-items: center;
+}
+
+.results__filter-icon {
+  width: 45px;
+  height: 45px;
+  background-color: transparent;
+}
+
+.results__form {
+  position: relative;
+  margin-left: auto;
+}
+
+.results__select {
+  width: 264px;
+  height: 59px;
+  padding-left: 20px;
+  font-size: 30px;
+  color: #a5a5a5;
+  border-radius: 5px;
+  border: 2px solid #a5a5a5;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  outline: none;
+  appearance: none;
+  cursor: pointer;
+}
+
+.results__form::after {
+  position: absolute;
+  content: '';
+  display: block;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+  background: none;
+  border-right: 12px solid transparent;
+  border-left: 12px solid transparent;
+  border-top: 12px solid #ff7171;
+  pointer-events: none;
+}
+
+.results__cards {
+  margin-top: 60px;
+}
+
+.results__cards-container {
+  margin-left: auto;
+  height: 613px;
+  width: 89.5%;
+  display: flex;
+  align-items: flex-start;
+  overflow: hidden;
+}
+
+.card:not(:first-child) {
+  margin-left: 40px;
+}
+
+.card {
+  position: relative;
+  min-width: 494px;
+  width: 100%;
+  height: 610px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding-bottom: 40px;
+}
+
+.card__img {
+  position: absolute;
+  top: 0;
+  height: 276px;
+  width: 100%;
+}
+
+.card__container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 434px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.card__title {
+  margin-top: auto;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.card__description {
+  margin-top: 10px;
+  font-size: 22px;
+}
+
+.number-bold {
+  font-weight: 600;
+}
+
+.card__id {
+  margin-top: 50px;
+  font-size: 22px;
+  color: #949494;
+}
+
+.card__price {
+  margin-top: 5px;
+  font-size: 30px;
+  color: #ff7171;
+}
+
+.card__price-term {
+  font-size: 22px;
+  color: #000000;
+}
+
+.card__mark {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.banner {
+  margin-top: 150px;
+  background: url(../assets/img/banner.png) center / cover;
+  width: 100%;
+  color: #ffffff;
+}
+
+.banner__wrapper {
+  background: rgba(255, 113, 113, 0.6);
+  height: 652px;
+}
+
+.banner__container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.banner__title {
+  font-weight: 700;
+  font-size: 56px;
+}
+
+.banner__description {
+  margin-top: 40px;
+  width: 716px;
+  font-size: 30px;
+}
+
+.bunner__btn {
+  display: inline-block;
+  color: #ff7171;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: 60px;
+  padding: 28px 18px;
+  background: #ffffff;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  user-select: none;
+}
+
+.application {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 55px;
+}
+
+.application__containter {
+  display: flex;
+  flex-direction: column;
+  color: #ff7171;
+}
+
+.application__title {
+  width: 1006px;
+  font-weight: 700;
+  font-size: 56px;
+}
+
+.application__description {
+  width: 744px;
+  font-size: 30px;
+  margin-top: 40px;
+}
+
+.application__downloads {
+  display: flex;
+  margin-top: 60px;
+  width: 502px;
+}
+
+.application__download-btn-appstore,
+.application__download-btn-googleplay {
+  width: 221px;
+  height: 76px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.application__download-btn-appstore {
+  width: 221px;
+  height: 76px;
+  border-radius: 8px;
+  background: url(../assets/img/appstore.png) center / cover no-repeat;
+}
+
+.application__download-btn-googleplay {
+  margin-left: auto;
+  width: 221px;
+  height: 76px;
+  border-radius: 8px;
+  background: url(../assets/img/googleplay.png) center / cover no-repeat;
+}
+
+.application__imgs {
+  position: relative;
+}
+
+.elipse1 {
+  position: absolute;
+  z-index: 1;
+  right: -45px;
+  top: -30px;
+}
+
+.elipse2 {
+  position: absolute;
+  z-index: 1;
+  right: 20px;
+  top: 300px;
+}
+
+.elipse3 {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+}
+
+.elipse4 {
+  position: absolute;
+  z-index: -1;
+  left: -70px;
+  bottom: 40px;
+}
+
+.elipse5 {
+  position: absolute;
+  z-index: -1;
+  left: -20px;
+  top: 140px;
+}
+
+.application__preview {
+  position: relative;
+}
+
+.footer {
+  margin-top: 150px;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 200px 60px;
+  font-weight: 600;
+  font-size: 20px;
+}

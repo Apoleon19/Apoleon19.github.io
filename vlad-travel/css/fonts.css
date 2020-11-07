@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'Pristina';
+  src: url(../fonts/Pristina.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../fonts/Montserrat-Bold.ttf);
+  font-weight: 700, bold;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../fonts/Montserrat-SemiBold.ttf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../fonts/Montserrat-Regular.ttf);
+  font-weight: normal;
+}
