@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Pages</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,600&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-decoration: none;
+        color: rgb(61, 61, 61);
+        font-family: 'Montserrat', sans-serif;
+      }
+
+      .wrapper {
+        position: absolute;
+        min-width: 100%;
+        min-height: 100vh;
+        background: url(https://w.wallha.com/ws/2/sUtJ4bw5.jpg) center / cover
+          no-repeat;
+      }
+
+      .container {
+        position: relative;
+        max-width: 1220px;
+        margin: 0 auto;
+      }
+
+      .pages__list {
+        margin-top: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .pages__list-item {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 20px;
+        margin-top: 20px;
+        max-width: 300px;
+        width: 100%;
+        background: #ffe032;
+        border-radius: 10px;
+        box-shadow: 0 5px 5px rgb(95, 91, 81);
+      }
+
+      .pages__list-date {
+        position: absolute;
+        top: 10px;
+        left: 20px;
+        font-size: 13px;
+      }
+
+      .pages__list-title {
+        font-size: 30px;
+        text-shadow: 0 1px 1px rgb(95, 91, 81);
+      }
+
+      .pages__list-item a {
+        width: 64px;
+        height: 64px;
+        background: url(https://cdn4.iconfinder.com/data/icons/web-pages-seo/512/33-512.png)
+          center / cover;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <ul class="pages__list">
+          <li class="pages__list-item">
+            <div class="pages__list-title">Github</div>
+            <a href="https://github.com/Apoleon19/apoleon19.github.io"></a>
+          </li>
+          <li class="pages__list-item">
+            <div class="pages__list-date">09.11.2020</div>
+            <div class="pages__list-title">laslesvpn</div>
+            <a href="https://apoleon19.github.io/laslesvpn/"></a>
+          </li>
+          <li class="pages__list-item">
+            <div class="pages__list-date">06.11.2020</div>
+            <div class="pages__list-title">vlad-travel</div>
+            <a href="https://apoleon19.github.io/vlad-travel/"></a>
+          </li>
+          <li class="pages__list-item">
+            <div class="pages__list-date">05.11.2020</div>
+            <div class="pages__list-title">vr-planet</div>
+            <a href="https://apoleon19.github.io/vr-planet/"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
